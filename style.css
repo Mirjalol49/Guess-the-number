@@ -1,0 +1,140 @@
+/* VARIABLES */
+:root {
+    /* --main-text-color : #fff; */
+    /* --main-bg-color : #fff; */
+    /* --main-font-size : 16px; */
+    /* --main-font-weight : 400; */
+    /* --main-line-height : 1.5; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height    : 100%;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height : auto;
+}
+
+body {
+    display         : flex;
+    flex-direction  : column;
+    height          : 100%;
+    margin          : 0;
+    padding         : 0;
+    font-family     : "Arial", sans-serif;
+    background-color: #c3dfe0;
+}
+
+
+
+/* CONTAINER */
+.container {
+    max-width    : YOUR CONTAINER MAX-WIDTH PX HERE;
+    margin-right : auto;
+    margin-left  : auto;
+    padding-right: 20px;
+    padding-left : 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main {
+    flex-grow: 1;
+}
+
+#input {
+    padding         : 6px 12px;
+    font-size       : 16px;
+    font-weight     : 400;
+    line-height     : 1.5;
+    color           : #212529;
+    background-color: #fff;
+    background-clip : padding-box;
+    border          : 1px solid #ced4da;
+    appearance      : none;
+    border-radius   : 4px;
+    transition      : border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+
+
+}
+
+#input:focus {
+    color           : #212529;
+    background-color: #fff;
+    border-color    : #86b7fe;
+    outline         : 0;
+    box-shadow      : 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+#check {
+    cursor          : pointer;
+    outline         : 0;
+    color           : #fff;
+    background-color: #0d6efd;
+    border-color    : #0d6efd;
+    display         : inline-block;
+    font-weight     : 400;
+    line-height     : 1.5;
+    text-align      : center;
+    border          : 1px solid transparent;
+    padding         : 6px 12px;
+    font-size       : 16px;
+    border-radius   : .25rem;
+    transition      : color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+
+}
+
+#check:hover {
+    color           : #fff;
+    background-color: #0b5ed7;
+    border-color    : #0a58ca;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-style: italic;
+    margin    : 0 0 10px 0;
+}
+
+#answer {
+    font-style: normal;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    #input {
+        width        : 100%;
+        margin-bottom: 7px;
+    }
+
+    #check {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
